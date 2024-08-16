@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/back-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+    
+
+nav ul  li  a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.logo{
+    width: 140px;
+}
+.app{
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    padding: 10px 15px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.app:hover{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 10%;
+   max-width: 600px;
+
+}
+
+.content h1{
+    font-size: 70px;
+    color: #222;
+}
+
+.content  p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+
+}
+
+.content .btn{
+    padding: 15px 88px;
+    border-radius: 30px;
+    border-top-right-radius: 0;    
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    transition: 0.5s;
+    animation-delay: 1s;
+}
+
+.content .btn:hover{
+border-radius: 30px;
+cursor: pointer;
+}
+
+
+.img{
+    position: absolute;
+    width: 480px;
+    bottom: 0;
+    right: 10%;
+   
+}
+.feature .img{
+    animation-delay: 1.5s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
