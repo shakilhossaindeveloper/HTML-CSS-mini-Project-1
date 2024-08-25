@@ -37,6 +37,9 @@ nav ul  li  a{
     display: inline-block;
     color: black;
     font-size: 18px;
+}
+
+a:hover{
     cursor: pointer;
 }
 
@@ -50,9 +53,14 @@ nav ul  li  a{
     border-radius: 30px;
     border-top-right-radius: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 .app:hover{
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.other ul li a:hover{
     cursor: pointer;
 }
 
@@ -81,6 +89,9 @@ nav ul  li  a{
     background-image: linear-gradient(45deg, #df4881, #c430d7);
     transition: 0.5s;
     animation-delay: 1s;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .content .btn:hover{
@@ -96,6 +107,10 @@ cursor: pointer;
     right: 10%;
    
 }
+
+/*Just update */
+
+
 .feature .img{
     animation-delay: 1.5s;
 }
